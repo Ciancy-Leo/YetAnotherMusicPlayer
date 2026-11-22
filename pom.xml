@@ -12,7 +12,23 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<javafx.version>22.0.1</javafx.version>
+		<javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
     </properties>
+
+    <dependencies>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+			<version>${javafx.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-fxml</artifactId>
+			<version>${javafx.version}</version>
+		</dependency>
+	</dependencies>
 
     <build>
         <plugins>
@@ -25,6 +41,15 @@
                     <mainClass>com.example.Main</mainClass>
                 </configuration>
             </plugin>
+            <plugin>
+				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-maven-plugin</artifactId>
+				<version>0.0.8</version>
+				<configuration>
+					<mainClass>com.project</mainClass>
+					<javafx.version>21</javafx.version>
+				</configuration>
+			</plugin>
         </plugins>
     </build>
 </project>
