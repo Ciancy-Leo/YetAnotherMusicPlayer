@@ -2,11 +2,13 @@ package com.project.service;
 
 public interface PlaylistService{
 
-    public void createPlaylist(String nome); //forse string per stampare il risultato riuscito/fallito
-    public void modifyPlaylistName(String nome, Playlist playlist); //forse string per stampare il risultato riuscito/fallito
-    public void deletePlaylist(Playlist playlist); //forse string per stampare il risultato riuscito/fallito
-    public void addBranoPlaylist(Brano brano, Playlist playlist); //forse string per stampare il risultato riuscito/fallito
-    public void deleteBranoPlaylist(Brano brano, Playlist playlist); //forse string per stampare il risultato riuscito/fallito
-    public void branoUp(Brano brano); //forse string per stampare il risultato riuscito/fallito
-    public void branoDown(Brano brano); //forse string per stampare il risultato riuscito/fallito
+    //forse string per stampare il risultato riuscito/fallito per quasi tutti i metodi presenti in questa classe
+
+    public void createPlaylist(String nome);
+    public void modifyPlaylistName(String nome, Playlist playlist);
+    public void deletePlaylist(Playlist playlist);
+    public void addBranoPlaylist(Brano brano, Playlist playlist);
+    public void deleteBranoPlaylist(Brano brano, Playlist playlist);
+    public void branoUp(Brano brano);
+    public void branoDown(Brano brano);
 }
